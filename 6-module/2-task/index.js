@@ -34,6 +34,7 @@ export default class ProductCard {
     const elemAddEvent = new CustomEvent('product-add', {
       bubbles: true,
       detail: this.#product.id
+
     });
 
     this.elem.dispatchEvent(elemAddEvent);
